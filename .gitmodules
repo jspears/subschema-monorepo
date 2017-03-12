@@ -1,7 +1,3 @@
-[submodule "subschema-project"]
-	path = subschema-project
-	url = git@github.com:subschema/subschema-project.git
-	master = master
 [submodule "subschema-server-utils"]
 	path = subschema-server-utils
 	url = git@github.com:subschema/subschema-server-utils.git
