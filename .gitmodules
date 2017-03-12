@@ -1,7 +1,3 @@
-[submodule "subschema-blueprint"]
-	path = subschema-blueprint
-	url = git@github.com:subschema/subschema-blueprint.git
-	master = master
 [submodule "subschema-test-samples"]
 	path = subschema-test-samples
 	url = git@github.com:subschema/subschema-test-samples.git
