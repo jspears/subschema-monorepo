@@ -1,7 +1,3 @@
-[submodule "subschema-prop-types"]
-	path = subschema-prop-types
-	url = git@github.com:subschema/subschema-prop-types.git
-	master = master
 [submodule "subschema-injection"]
 	path = subschema-injection
 	url = git@github.com:subschema/subschema-injection.git
