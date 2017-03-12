@@ -1,6 +1,6 @@
 {
   "name": "subschema",
-  "version": "1.6.0",
+  "version": "1.8.0",
   "description": "Backbone Forms like declaritive forms for react",
   "main": "dist/subschema-server.js",
   "browser": "dist/subschema.js",
@@ -20,8 +20,9 @@
     "karma-dist": "NODE_ENV=test karma start ./karma.conf.js --no-single-run --colors --auto-watch",
     "compile": "NODE_ENV=production webpack -p  --display-modules --config ./webpack.config.js",
     "lib": "webpack --config lib.webpack.config.js",
-    "prepublish": "npm run compile",
-    "preversion": "npm prune && npm run prepublish && npm run test && npm run test-dist"
+    "prepublish": "",
+    "preversion": "npm prune && npm run prepublish && npm run test && npm run test-dist",
+    "prepublish-old": "npm run compile"
   },
   "keywords": [
     "react",
@@ -76,10 +77,10 @@
     "source-map-support": "^0.4.0",
     "strip-loader": "^0.1.1",
     "style-loader": "^0.13.0",
-    "subschema-expression": "^1.6.0",
-    "subschema-injection": "^1.6.0",
-    "subschema-prop-types": "^1.6.0",
-    "subschema-test-support": "^1.6.0",
+    "subschema-expression": "1.8.0",
+    "subschema-injection": "1.8.0",
+    "subschema-prop-types": "1.8.0",
+    "subschema-test-support": "1.8.0",
     "supports-color": "^3.1.2",
     "text-loader": "0.0.1",
     "url-loader": "^0.5.7",

@@ -1,6 +1,6 @@
 {
   "name": "subschema-prop-types",
-  "version": "1.6.0",
+  "version": "1.8.0",
   "description": "Subschema PropTypes",
   "main": "dist/index",
   "dependencies": {},
@@ -25,6 +25,7 @@
   "scripts": {
     "test": "npm run dist && babel ./test/ -d ./test-dist && mocha ./test-dist/index-test.js",
     "dist": "NODE_ENV=production babel -s true ./src -d ./dist",
-    "prepublish": "npm prune && npm run test"
+    "prepublish": "",
+    "prepublish-old": "npm prune && npm run test"
   }
 }

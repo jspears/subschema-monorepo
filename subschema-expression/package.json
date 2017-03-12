@@ -1,6 +1,6 @@
 {
   "name": "subschema-expression",
-  "version": "1.6.0",
+  "version": "1.8.0",
   "description": "Expressions for subschema",
   "main": "dist/expression.js",
   "directories": {
@@ -9,8 +9,9 @@
   "scripts": {
     "dist": "babel -s true src --out-dir dist",
     "test": "npm run dist && mocha test/*-test.js",
-    "prepublish": "npm prune && npm run dist",
-    "preversion": "npm run test"
+    "prepublish": "",
+    "preversion": "npm run test",
+    "prepublish-old": "npm prune && npm run dist"
   },
   "repository": {
     "type": "git",

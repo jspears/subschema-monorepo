@@ -1,6 +1,6 @@
 {
   "name": "subschema-server-utils",
-  "version": "1.6.1",
+  "version": "1.8.0",
   "description": "Run validators against a schema and data",
   "main": "dist/index",
   "repository": {
@@ -17,7 +17,8 @@
     "test-dist-externals": "npm run dist-externals && webpack --config ./webpack.config.js --output-path dist --output-filename index-externals-test.js --entry ./test/validateFactory-test.js --display-modules --output-library-target=commonjs && mocha ./dist/index-externals-test.js",
     "test-dist": "npm run dist && webpack --config ./webpack.config.js --output-path dist --output-filename index-test.js --entry ./test/validateFactory-test.js --display-modules --output-library-target=commonjs",
     "test": "npm run test-dist &&  npm run test-dist-externals",
-    "prepublish": "npm test"
+    "prepublish": "",
+    "prepublish-old": "npm test"
   },
   "author": "Justin Spears<speajus@gmail.com>",
   "license": "ISC",
@@ -45,8 +46,8 @@
     "null-loader": "^0.1.1",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "subschema": "^1.6.0",
-    "subschema-expression": "^1.6.0",
+    "subschema": "1.8.0",
+    "subschema-expression": "1.8.0",
     "webpack": "^1.12.14"
   },
   "dependencies": {

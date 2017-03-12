@@ -1,6 +1,6 @@
 {
   "name": "subschema-project",
-  "version": "1.6.0",
+  "version": "1.8.0",
   "description": "Subschema Project Generator",
   "main": "dist/index.js",
   "repository": "https://github.com/subschema/subschema-project",
@@ -56,8 +56,8 @@
     "source-map-support": "^0.4.0",
     "strip-loader": "^0.1.1",
     "style-loader": "^0.13.0",
-    "subschema-test-samples": "^1.6.0",
-    "subschema-test-support": "^1.6.0",
+    "subschema-test-samples": "1.8.0",
+    "subschema-test-support": "1.8.0",
     "supports-color": "^3.1.2",
     "temp": "^0.8.3",
     "text-loader": "0.0.1",
@@ -75,9 +75,10 @@
     "cli": "NODE_ENV=production webpack --target node --display-modules --output-path bin --entry ./src/command.js --output-filename=project.js --config ./webpack.config.js",
     "dist-project": "NODE_ENV=production webpack --target node --display-modules --output-path dist --entry ./bin/project.js --output-filename=project.js --config ./webpack.config.js",
     "dist": "NODE_ENV=production webpack  --display-reasons --display-modules --output-path dist --entry ./src/index.js --output-library-target=umd --output-library-name SubschemaProject --output-filename=index.js --config ./webpack.config.js",
-    "prepublish": "npm run dist",
+    "prepublish": "",
     "preversion": "npm run mocha && npm run test",
-    "mocha": "npm run dist && mocha test/*-mocha.js"
+    "mocha": "npm run dist && mocha test/*-mocha.js",
+    "prepublish-old": "npm run dist"
   },
   "author": "Justin Spears",
   "license": "ISC"

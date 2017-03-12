@@ -1,6 +1,6 @@
 {
   "name": "subschema-blueprint",
-  "version": "0.1.0",
+  "version": "1.8.0",
   "private": true,
   "devDependencies": {
     "react-addons-css-transition-group": "^15.4.0",
@@ -11,7 +11,7 @@
     "@blueprintjs/datetime": "^1.0.1",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "subschema": "file:///Users/jspear1/WebstormProjects/subschema-devel/subschema"
+    "subschema": "1.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
